@@ -3,7 +3,8 @@
 This is a web-based application designed to analyze test results using various technologies. The frontend is built with HTML, CSS, and JavaScript, while the backend is developed in Flask. Additionally, there's an AI section implemented with Python to further analyze the test results.
 ## Demo
 
-You can view a live demo of the project [here](https://sarakhosrozadeh.github.io/Analysis-of-test-results-/).
+You can view a live demo of the project [here](https://sarakhosrozadeh.github.io/Analysis-of-test-results-/) (opens in a new tab).
+
 
 
 ## Frontend
