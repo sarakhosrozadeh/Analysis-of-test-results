@@ -50,7 +50,7 @@
       <div class="row">
         <div class="col-md-6 offset-md-3">
           <form class="mt-5" method="post" enctype="multipart/form-data" id="uploadForm"
-          action="/blood_test /blood_sugar_test">
+          action="">
             <h4 class="mb-3">
               اطلاعات بیمار
             </h4>
@@ -125,17 +125,6 @@
         var url = window.location.href;
         var action;
 
-        if (age === "" || gender === "" || sickness === "" || file === "") {
-          document.getElementById("errorAlert").style.display = "block";
-          document.getElementById("successAlert").style.display = "none";
-        } else {
-          if (url.includes("/blood_sugar_test")) {
-            action = "/blood_sugar_test";
-          } else if (url.includes("/blood_test")) {
-            action = "/blood_test";
-          }
-
-          form.action = action;
           document.getElementById("errorAlert").style.display = "none";
           document.getElementById("successAlert").style.display = "block";
 
@@ -144,7 +133,7 @@
           },
           2000);
         }
-      }
+      
     </script>
   </body>
 
