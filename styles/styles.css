@@ -131,9 +131,14 @@ body > *:not(#preloader) {
   bottom: 0%;
   left: 0;
   right: 0;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: -1;
   background: linear-gradient(to right, #000d15 0%, #000605, #00080a 100%);
+}
+@media (max-width: 768px) {
+  .navbar::before {
+    opacity: 0.9; /* Opacity for mobile screens */
+  }
 }
 
 .nav-item a {
@@ -167,15 +172,17 @@ body > *:not(#preloader) {
 
 .header-buttons a {
   border: 1px solid #fff;
-  border-radius: 100px;
+  border-radius: 50px; 
   margin: 0 5px;
-  padding: 12px 35px;
+  padding: 10px 25px; 
   outline: none;
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
   text-align: center;
+  display: inline-block; 
+  text-decoration: none; 
 }
 
 .header-buttons a:hover {
@@ -184,6 +191,7 @@ body > *:not(#preloader) {
   text-decoration: none;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
+
 
 .center-div p {
   font-size: 1.3rem;
